@@ -1,0 +1,24 @@
+open command prompt and type 'mongo';
+
+if error will come, then set the mongodb path
+
+steps:-
+  1.copy the mongo db path of the bin folder & set the path in 'environment variable' in control panel
+                           OR follow the steps, given in the following link
+https://stackoverflow.com/questions/15053893/error-when-trying-to-connect-to-a-mongod
+
+commands:-
+  show dbs :- showing the list of database;
+  use Database_Name :- By using the 'use' keyword, we can go inside the database as well as used to create the new database
+  db :- To check your currently selected database
+  db.dropDatabase() :- to remove the database.
+  insert :- eg. db.products.insert( { item: "card", qty: 15 } )
+  drop the collection :- db.collection.drop() 
+                    eg - db.user.drop()
+  db.collection.remove() :- to remove the perticular record
+                       eg - db.practice.remove({name:"Very Good"})
+
+  db.collection.remove({}) :- To remove all fields inside the collections use
+                       eg - db.practice.remove({})       
+                             
+  db.collection.update({}) :- eg - db.practice.update({age:23},{$set:{name:"Mai to mazak kar raha tha"}})
